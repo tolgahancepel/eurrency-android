@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EUR Exchange</string>
+
+    <string-array name="currencies">
+        <item>USD</item>
+        <item>GBP</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>INR</item>
+        <item>TRY</item>
+    </string-array>
+
+</resources>
+

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebeaf0"
+        tools:context=".view.MainActivity">
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="My Notes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="nextActivity">
+
+        </Button>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_usd"
+            android:layout_width="339dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="59dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="10dp"
+                android:alpha="0.2"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_dollar"></ImageView>
+
+
+            <TextView
+                android:id="@+id/text_usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@null"
+                android:textColor="#00799D"
+                android:textSize="24sp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="80dp"
+                android:text="EUR\nUSD"
+                android:textSize="14sp"></TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_euro"
+            android:layout_width="339dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_usd">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="59dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="10dp"
+                android:alpha="0.2"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_pound"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="80dp"
+                android:text="EUR\nGBP"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/text_gbp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="20dp"
+                android:textColor="#00799D"
+                android:textSize="24sp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_cad"
+            android:layout_width="339dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_euro">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="59dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="10dp"
+                android:alpha="0.2"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_canadian_dollar">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="80dp"
+                android:text="EUR\nCAD"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_cad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="20dp"
+                android:textColor="#00799D"
+                android:textSize="24sp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_turkishlira"
+            android:layout_width="339dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_cad">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="59dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="10dp"
+                android:alpha="0.2"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_turkish_lira">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="80dp"
+                android:text="EUR\nTRY"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_try"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="20dp"
+                android:textColor="#00799D"
+                android:textSize="24sp">
+
+            </TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_chf"
+            android:layout_width="339dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_turkishlira">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="59dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="10dp"
+                android:alpha="0.2"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_swiss_franc">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="80dp"
+                android:text="EUR\nCHF"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_chf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="20dp"
+                android:textColor="#00799D"
+                android:textSize="24sp">
+
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_inr"
+            android:layout_width="339dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_chf">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="59dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="10dp"
+                android:alpha="0.2"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_indian">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="80dp"
+                android:text="EUR\nINR"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/text_inr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="20dp"
+                android:textColor="#00799D"
+                android:textSize="24sp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_inr">
+
+
+            <TextView
+                android:id="@+id/txt_converter_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+
+                android:layout_marginTop="8dp"
+                android:background="#fff"
+                android:text="Curreny Converter"
+                android:textAlignment="center"
+                android:textColor="#0096b4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="16dp">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:text="250"
+                app:layout_constraintTop_toTopOf="@+id/txt_converter_header"
+                tools:layout_editor_absoluteX="100dp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:background="#0096b4">
+            </Spinner>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="110dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_exchange" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="100dp"
+                android:background="#0096b4">
+
+            </Spinner>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
