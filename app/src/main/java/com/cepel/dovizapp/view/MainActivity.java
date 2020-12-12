@@ -39,21 +39,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    /* To Do Codes */
-
-
-
-
-
-
-
-
     /* Currency Codes*/
 
     CardView cardView_usd, cardView_gbp, cardView_try, cardView_cad, cardView_chf, cardView_inr;
     TextView textView_usd, textView_gbp, textView_try, textView_cad, textView_chf, textView_inr;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
