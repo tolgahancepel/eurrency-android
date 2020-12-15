@@ -1,4 +1,4 @@
-package com.cepel.dovizapp.view;
+    package com.cepel.dovizapp.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;
