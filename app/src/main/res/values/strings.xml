@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EUR Exchange</string>
+    <string name="app_name">Eurrency</string>
 
     <string-array name="currencies">
         <item>USD</item>

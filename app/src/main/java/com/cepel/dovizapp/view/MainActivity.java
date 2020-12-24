@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 textView_gbp.append(dovizler.getRates().getGBP().toString());
                 textView_cad.append(dovizler.getRates().getCAD().toString());
                 textView_try.append(dovizler.getRates().getTRY().toString());
-                textView_chf.append(dovizler.getRates().getTRY().toString());
+                textView_chf.append(dovizler.getRates().getCHF().toString());
                 textView_inr.append(dovizler.getRates().getINR().toString());
 
                 d_usd = dovizler.getRates().getUSD().toString();
